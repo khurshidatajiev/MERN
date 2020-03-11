@@ -1,0 +1,39 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node add.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khurshidatajiev/MERN.git"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "express"
+  ],
+  "author": "Khurshid Atajiev <khurshid.atajiev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khurshidatajiev/MERN/issues"
+  },
+  "homepage": "https://github.com/khurshidatajiev/MERN#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "config": "^3.3.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
