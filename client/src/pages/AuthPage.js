@@ -42,7 +42,7 @@ const AuthPage = () => {
     <div className={'row'}>
       <div className={'col s6 offset-s3'}>
         <div className={'card'}>
-          <div className={'card-content white-text'}>
+          <div className={'card-content'}>
             <span className={'card-title'}>Авторизация</span>
             <div>
               <div className={'input-field'}>
