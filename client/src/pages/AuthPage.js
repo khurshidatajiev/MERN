@@ -17,6 +17,10 @@ const AuthPage = () => {
     clearError();
   }, [error, toast, clearError]);
 
+  useEffect(() => {
+    window.M.updateTextFields();
+  }, []);
+
   const changeHandler = (event) => {
     setForm({ ...form, [event.target.name]: event.target.value });
   };
@@ -50,6 +54,7 @@ const AuthPage = () => {
                   id={'email'}
                   name={'email'}
                   type={'text'}
+                  value={form.email}
                   placeholder={'Введите email'}
                   onChange={changeHandler}
                 />
@@ -60,6 +65,7 @@ const AuthPage = () => {
                   id={'password'}
                   name={'password'}
                   type={'password'}
+                  value={form.password}
                   placeholder={'Введите пароль'}
                   onChange={changeHandler}
                 />
