@@ -21,7 +21,7 @@ const Navbar = () => {
               <NavLink to={'/create'}>Создать</NavLink>
             </li>
             <li>
-              <NavLink to={'/links'}>Создать</NavLink>
+              <NavLink to={'/links'}>Ссылки</NavLink>
             </li>
             <li>
               <a onClick={logoutHandler} href="/">Выйти</a>
